@@ -7,4 +7,8 @@ $app = new Silex\Application();
 
 // ... definitions
 
+$app->get('/ola/{name}', function($name){
+    return sprintf('Olá %s!', $name);
+});
+
 $app->run();
